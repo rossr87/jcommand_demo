@@ -8,7 +8,7 @@
 package jcommand_demo;
 
 public class Spin600RpmCommand implements Command {
-	private SimpleWasher washer;
+	private SimpleWasherReceiver washer;
 
 	public void execute() {
 		washer.setSpinRPM(SpinRPM.SIX_HUNDRED);

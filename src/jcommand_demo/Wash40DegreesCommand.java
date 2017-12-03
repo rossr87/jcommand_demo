@@ -2,7 +2,7 @@ package jcommand_demo;
 
 
 public class Wash40DegreesCommand implements Command {
-	private SimpleWasher washer;
+	private SimpleWasherReceiver washer;
 	
 	public void execute() {
 		washer.setWashTemperature(WashTemperature.FOURTY);
