@@ -8,9 +8,16 @@
 package jcommand_demo;
 
 public class Spin600RpmCommand implements Command {
+	/*
+	 * Each command has a reference to a Reciver.
+	 */
 	private SimpleWasherReceiver washer;
 
+	Spin600RpmCommand(SimpleWasherReceiver washer) {
+		this.washer = washer;
+	}
+	
 	public void execute() {
-		washer.setSpinRPM(SpinRPM.SIX_HUNDRED);
+		this.washer.setSpinRPM(SpinRPM.SIX_HUNDRED);
 	}
 }
